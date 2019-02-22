@@ -1,0 +1,127 @@
+<html>
+<head>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="cannonGame.js"></script>
+
+
+<style>
+	#background {
+	width: 1500; 
+	height:725px; 
+	background-color: blue;
+	border-width: 15px;
+	border: black;
+	border-style: solid;
+	}
+	
+	#target {
+	position: absolute; 
+	width: 140px; 
+	height: 80px; 
+	background-color: green;
+	top: 50px; 
+	left: 5%;
+	border: black;
+	border-width: 10px;
+	border-style: solid;}
+	
+	#cannon {
+	position: absolute;  
+	width: 60px; 
+	height: 120px; 
+	background: patrick.jpg;
+	background-color: black;
+	bottom: 35px; 
+	left: 50%; 
+	transform: rotate(0deg);
+	}
+	
+	#ball {
+	position: absolute;
+	left: 50%;
+	bottom: 95px;
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	}
+	
+	#textBox {
+	position: absolute;
+	left: 10px;
+	bottom: 25px;
+	width: 650px;
+	height: 180px;
+	border: black;
+	border-width: 5px;
+	background-color: cyan;
+	text-color: black;
+	font-size: 36px;
+	border-style: solid;
+	
+	}
+	
+	#gameOverBox {
+		position: absolute;
+		left: 30%;
+		bottom: 30%;
+		width: 800;
+		height: 300;
+		font-size:120;
+		color: red;
+		font-style: oblique;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	
+	#winBox {
+		position: absolute;
+		left: 25%;
+		bottom: 25%;
+		width: 800;
+		height: 300;
+		font-size:60;
+		color: yellow;
+		font-style: oblique;
+		font-weight: bold;
+		text-shadow: -1px 0 black, 0 5px black, 5px 0 black, 0 -1px black;
+		
+	}
+</style>
+
+</head>
+
+<body>
+	<div id = "background">
+		<img id = "scene" src = "realdesert.jpg" height = "725" width="1500" />
+
+		<div id = "target">
+			<img src = "freezer.jpg" height="80" width= "140"/>
+		</div>
+		
+		<div id = "cannon" >
+			<img src="patrick.jpg" height="120" width="60"/>
+		</div>
+		
+		<div id = "ball">
+			<img src = "ice.jpg" height = "15" width="15" />
+		</div>
+		
+		<div id = "textBox">
+			<span> You have 10 shots to stop Global Warming! You need 25 points to save the Penguins</span>
+			<br>
+			<span id = "scoreTag"> Score:  </span>
+			<br>
+			<span id = "shotTag"> Ice Cubes Remaining: </span>
+		</div>
+		
+		<div id = "gameOverBox">
+		</div>
+		
+		<div id ="winBox">
+		</div>
+		
+	</div>
+</body>
+
+</html>
